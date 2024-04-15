@@ -1,0 +1,84 @@
+body {
+    background-color: #121214;
+
+}
+
+
+header {
+    position: relative;
+    gap: 0.5rem;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    height: 32px;
+    position: fixed;
+    inset: 0;
+    background-color: gray;
+    z-index: 3;
+
+}
+
+main {
+
+   margin-top:  2rem;
+   padding: 1rem;
+
+}
+
+.btn {
+
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 4px 8px;
+    background-color: white;
+    color: #333;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    min-width: 120px;
+    text-align: center;
+
+}
+
+.btn:hover {
+
+
+    background-color: rgb(197, 128, 0);
+    color: white;
+    transition: all 300ms;
+
+}
+
+
+.btn_sair {
+
+
+    z-index: 3;
+    margin-left: 55%;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 4px 8px;
+    background-color: white;
+    color: #333;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    min-width: 120px;
+    text-align: center;
+    position: absolute;
+    right: 16px;
+
+}
+
+.btn_sair:hover {
+
+
+    background-color: rgb(224, 3, 3);
+    color: white;
+    transition: all 300ms;
+
+}
+
+header .btn_sair {
+    float: right;
+}

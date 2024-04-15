@@ -1,0 +1,18 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Upload Image</button>
+</form>
+<div>
+    <label>
+     <form class="ir_galeria" action="{% url 'galeria' %}" method="GET" enctype="multipart/form-data">{% csrf_token %}
+        <button type="submit" class="btn_galeria" value="galeria">Galeria</button>
+        <a href="/excluir_imagem/" class="btn_link">Excluir Imagem</a>
+        <a href="/lixeira/" class="btn_link">Lixeira</a>
+        <a href="/sair" class="btn_sair" >Sair</a>
+     </form>
+    </label>
+</div>
