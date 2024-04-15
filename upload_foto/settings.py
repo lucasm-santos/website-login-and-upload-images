@@ -149,8 +149,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 ROLEPERMISSIONS_MODULE = "upload_foto.roles"
 
 
-AWS_ACCESS_KEY_ID = 'AKIA2BSQBTM5CT3PDVPC'
-AWS_SECRET_ACCESS_KEY = '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'
+AWS_ACCESS_KEY_ID = 'Chave de acesso aws'
+AWS_SECRET_ACCESS_KEY = 'key secreta acesso aws'
 AWS_STORAGE_BUCKET_NAME = 'konoalucardtesteimagens'
 AWS_S3_REGION_NAME = 'us-east-2'
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
