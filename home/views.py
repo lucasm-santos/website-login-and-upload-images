@@ -42,7 +42,7 @@ def excluir_imagem(request):
     if request.method == "POST":
         image_id = request.POST.get("image_id")
         # essa parte é pra excluir a imagem do banco do amazon s3, mas a perm nn ta direito pq teria q mudar a região do bucket
-        # s3 = boto3.client('s3', aws_access_key_id='AKIA2BSQBTM5CT3PDVPC', aws_secret_access_key='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')
+        # s3 = boto3.client('s3', aws_access_key_id='', aws_secret_access_key='')
         excluirImagemPorId(image_id)
 
         
